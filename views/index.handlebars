@@ -1,0 +1,14 @@
+<div class="contain">
+    <input placeholder="search"><button id="search">Search</button>
+    {{#each asset}}
+        <article class="card" style="width: 30rem;">
+            <div class="note">
+                <a href="/company/{{_id}}">{{company}}</a>
+                <a href="/editClient/{{_id}}" class="card-link" >Edit Client</a>
+                <a href="/deleteClient/{{_id}}" class="card-link">Delete Client</a>
+            </div>
+
+        </article>
+        
+    {{/each}}
+</div>

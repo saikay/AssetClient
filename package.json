@@ -1,0 +1,27 @@
+{
+  "name": "assetclient",
+  "version": "1.0.0",
+  "description": "Log client info.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saikay/AssetClient.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saikay/AssetClient/issues"
+  },
+  "homepage": "https://github.com/saikay/AssetClient#readme"
+}
