@@ -1,4 +1,8 @@
 <div>
     <h1>{{company}}</h1>
-    <p>{{note}}</p>
+    <textarea id="note">{{note}}</textarea>
+    <script>
+        var simplemde = new SimpleMDE({element: document.getElementById("note"),status:false,toolbar:false});
+        simplemde.togglePreview();
+    </script>
 </div>

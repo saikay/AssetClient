@@ -17,6 +17,16 @@ module.exports = function(app,db){
             res.render("editCompanyForm",dbAsset[0]);
         });
     })
+
+    app.post("/editCompany/",function(req,res){
+        db.Assets.updateOne({_id:req.body._id},{$set:{company:req.body.company,note:req.body.note}}).then(function(dbAsset){
+            db.Assets.find({}).then(function(dbArticle){
+                var dbObject= {asset: dbArticle};
+                res.render("index",dbObject);
+            });
+        });
+    });
+
     app.post("/addCompany",function(req,res){
         console.log("Add company");
          db.Assets.create({company:req.body.company,
