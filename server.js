@@ -1,6 +1,6 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 const bodyParser  = require("body-parser")
 PORT = process.env.PORT || 3000;
 const app = express();
