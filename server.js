@@ -5,7 +5,7 @@ const bodyParser  = require("body-parser")
 PORT = process.env.PORT || 3000;
 const app = express();
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Assets";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/assets";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 db = require("./models");
